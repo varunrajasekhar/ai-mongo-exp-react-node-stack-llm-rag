@@ -1,0 +1,24 @@
+{
+  "name": "study-backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "dev": "node --env-file=.env --watch server.js",
+    "admin": "node --env-file=.env scripts/promote-admin.js",
+    "test": "node --test",
+    "test:unit": "node --test test/unit.test.js",
+    "test:integration": "node --test test/app.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.3.0",
+    "supertest": "^7.1.4"
+  }
+}
